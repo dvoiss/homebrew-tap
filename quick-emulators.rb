@@ -18,18 +18,13 @@ class QuickEmulators < Formula
 
       - To remove the launching daemon, use the following commands:
 
-          sudo launchctl unload -w /Library/LaunchDaemons/com.dvoiss.quickemulators.plist
-          sudo rm /Library/LaunchDaemons/com.dvoiss.quickemulators.plist
+          sudo launchctl unload -w ~/Library/LaunchAgents/com.dvoiss.quickemulators.plist
+          sudo rm ~/Library/LaunchAgents/com.dvoiss.quickemulators.plist
 
       - Usage with Android Virtual Devices requires a "ANDROID_SDK" or "ANDROID_HOME" environment
         variable that is used to get the path to the emulator in the tools directory.
 
       - Usage with Genymotion Emulators requires "Genymotion.app" installed under "Applications".
-
-      - ** Make sure to install the daemon to this location **
-
-          ln -sfv /usr/local/opt/quick-emulators/*plist /Library/LaunchDaemons
-          sudo launchctl load /Library/LaunchDaemons/com.dvoiss.quickemulators.plist
     EOS
   end
 
