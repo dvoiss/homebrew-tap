@@ -1,9 +1,9 @@
 class QuickEmulators < Formula
   desc "Launch your Android emulators (Genymotion and AVDs) via Spotlight: ⌘ + Space"
   homepage "https://github.com/dvoiss/quick-emulators"
-  url "https://github.com/dvoiss/quick-emulators/archive/0.1.0.tar.gz"
-  version "0.1.0"
-  sha256 "41cb32d593191bf82fa21aa562df3f7d1907ab2d394f0baf4f03b00ef1879548"
+  url "https://github.com/dvoiss/quick-emulators/archive/0.1.1.tar.gz"
+  version "0.1.1"
+  sha256 "13c96c259ed7ab4744dd44751552d05ae7895be13cf3f04e834c52106d0261ed"
 
   def install
     FileUtils.mv "quick-emulators.py", "quickemulators"
@@ -26,7 +26,7 @@ class QuickEmulators < Formula
 
       - Usage with Genymotion Emulators requires "Genymotion.app" installed under "Applications".
 
-      - ** Make sure to install the daemon **
+      - ** Make sure to install the daemon to this location **
 
           ln -sfv /usr/local/opt/quick-emulators/*plist /Library/LaunchDaemons
           sudo launchctl load /Library/LaunchDaemons/com.dvoiss.quickemulators.plist
