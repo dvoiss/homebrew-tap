@@ -44,7 +44,7 @@ class QuickEmulators < Formula
     <plist version="1.0">
       <dict>
         <key>Label</key>
-        <string>com.dvoiss.quickemulators2</string>
+        <string>com.dvoiss.quickemulators</string>
         <key>EnableGlobbing</key>
         <true/>
         <key>ProgramArguments</key>
